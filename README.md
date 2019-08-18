@@ -1,5 +1,5 @@
 # MultipleTeamsInstances
-Manual and scripts for running multiple MS Teams instances
+Guide and PowerShell Scripts for running multiple MS Teams instances
 
 ## Let's get it working!
 
