@@ -1,6 +1,8 @@
 # Multiple Teams Instances
 Guide and PowerShell Scripts for running multiple MS Teams instances
 
+![Example of two Teams Instances running side-by-side](Multiple.png)
+
 ## Let's get it working!
 
 The guide assumes you are using Windows 10. But similar steps apply to Windows 8 and 7.
