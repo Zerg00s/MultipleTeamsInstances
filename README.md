@@ -3,6 +3,9 @@ Guide and PowerShell Scripts for running multiple MS Teams instances
 
 ![Example of two Teams Instances running side-by-side](Multiple.png)
 
+## Why not use Teams in the browser? 
+The desktop app gives you full functionality in Teams - like calling and meeting and desktop sharing. Performance is better in the desktop app due to data caching.
+
 ## Let's get it working!
 
 The guide assumes you are using Windows 10. But similar steps apply to Windows 8 and 7.
