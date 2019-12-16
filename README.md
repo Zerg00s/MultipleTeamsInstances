@@ -26,7 +26,7 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 
 $credential = Get-Credential
-Start-Process "C:\Users\$($credential.UserName)\AppData\Local\Microsoft\Teams\Update.exe" '--processStart "Teams.exe"' -Credential $credential
+Start-Process "C:\Users\$($credential.UserName)\AppData\Local\Microsoft\Teams\Update.exe" '--processStart "Teams.exe"' -WorkingDirectory $env:windir -Credential $credential
 ```
 
 - When prompted - enter your secondary Windows account that you created earlier.
@@ -46,7 +46,10 @@ Start-Process "C:\Users\$($credential.UserName)\AppData\Local\Microsoft\Teams\Up
 - If you run multiple Team instances and use the same Microsoft account - you will receive notifications in all of them. If someone calls you - you will see two incoming calls at the same time.
 - Teams is a resource hog. It uses a lot of RAG and processing power.
 
+## Troubleshooting
+
+- If you run the scripts and everything appears to work correctly but no new instance of teams starts up, close all open instaces of teams, open Task Manager (CTRL+SHIFT+ESC) and find all Teams processes and end the task. Run the script againa and you should now have a new instance of teams to log into. 
 
 ## Summary
 
-I am looking forward to Microsoft implementing multiple Teams instances natively in order to avoid this workaround. In the meanwhile, this is the only want that works for me.
+I am looking forward to Microsoft implementing multiple Teams instances natively in order to avoid this workaround. In the meanwhile, this is the only way that works for me.
