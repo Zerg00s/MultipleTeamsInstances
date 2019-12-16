@@ -48,7 +48,7 @@ Start-Process "C:\Users\$($credential.UserName)\AppData\Local\Microsoft\Teams\Up
 
 ## Troubleshooting
 
-- If you run the scripts and everything appears to work correctly but no new instance of teams starts up, close all open instaces of teams, open Task Manager (CTRL+SHIFT+ESC) and find all Teams processes and end the task. Run the script againa and you should now have a new instance of teams to log into. 
+If you run the scripts and everything appears to work correctly but no new instance of teams starts up, close all open instaces of teams, open Task Manager (CTRL+SHIFT+ESC) and find all Teams processes and end the task. Run the script againa and you should now have a new instance of teams to log into. 
 
 ## Summary
 
